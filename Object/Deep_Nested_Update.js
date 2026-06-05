@@ -16,3 +16,17 @@ const users = [
     }
   }
 ];
+
+
+const UpDateUser = users.map(user=>
+    user.id === 2 ?{
+           ...user,
+           address:{
+            ...user.address,
+            city: "Kasba"
+           }
+         
+    }:user
+)
+
+console.log(UpDateUser)
