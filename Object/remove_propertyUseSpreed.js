@@ -3,3 +3,6 @@ const user = {
   password: "12345",
   email: "a@gmail.com"
 };
+const { password, ...safeUser } = user;
+
+console.log(safeUser);
