@@ -5,3 +5,14 @@ const settings = {
     }
   }
 };
+
+const {
+  user: {
+    preferences: {
+      theme
+    }
+  }
+} = settings;
+
+console.log(theme);
+// dark
