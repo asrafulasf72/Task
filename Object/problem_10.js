@@ -4,3 +4,10 @@ const user = {
     city: "Dhaka"
   }
 };
+
+const {
+  address: { city }
+} = user;
+
+console.log(city);
+console.log(address);
