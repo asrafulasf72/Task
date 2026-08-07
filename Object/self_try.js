@@ -6,3 +6,12 @@ const student = {
   },
   hobbies: ["Football", "Gaming", "Reading"]
 };
+
+const {
+  marks: { math },
+  hobbies: [, secondHobby]
+} = student;
+
+console.log(math);
+console.log(secondHobby);
+
