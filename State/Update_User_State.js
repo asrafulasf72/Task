@@ -3,3 +3,10 @@ const [user, setUser] = useState({
   age: 22,
   city: "Dhaka"
 });
+
+const updateCity = () => {
+  setUser(prevUser => ({
+    ...prevUser,
+    city: "Chittagong"
+  }));
+};
