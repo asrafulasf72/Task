@@ -5,3 +5,11 @@ const [user, setUser] = useState({
     zip: 1200
   }
 });
+
+setUser(prevUser => ({
+  ...prevUser,
+  address: {
+    ...prevUser.address,
+    city: "Sylhet"
+  }
+}));
