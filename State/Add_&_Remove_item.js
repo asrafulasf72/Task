@@ -20,3 +20,7 @@ const [removecart, setRemoveCart] = useState([
   { id: 2, name: "Mouse", qty: 2 },
   { id: 3, name: "Keyboard", qty: 1 }
 ]);
+
+setRemoveCartCart(prevCart =>
+  prevCart.filter(item => item.id !== 2)
+);
