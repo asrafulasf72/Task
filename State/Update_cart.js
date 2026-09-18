@@ -32,3 +32,13 @@ setCart(prevCart => ({
       : item
   )
 }));
+
+
+/* Destructuring Props */
+
+function UserCard(props) {
+  return (
+    <h2>{props.name}</h2>
+  );
+}
+
