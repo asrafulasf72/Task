@@ -42,3 +42,8 @@ function UserCard(props) {
   );
 }
 
+function UserCard({ name }) {
+  return (
+    <h2>{name}</h2>
+  );
+}
