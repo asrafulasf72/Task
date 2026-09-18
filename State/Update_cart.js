@@ -47,3 +47,14 @@ function UserCard({ name }) {
     <h2>{name}</h2>
   );
 }
+
+
+function UserCard({ name, age, city }) {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>{age}</p>
+      <p>{city}</p>
+    </div>
+  );
+}
