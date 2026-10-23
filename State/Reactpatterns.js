@@ -12,3 +12,18 @@ setItems(prev =>
       : item
   )
 );
+
+// Update nested object
+setItems(prev =>
+  prev.map(item =>
+    item.id === id
+      ? {
+          ...item,
+          nested: {
+            ...item.nested,
+            property: newValue
+          }
+        }
+      : item
+  )
+);
